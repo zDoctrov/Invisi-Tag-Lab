@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		19EE3BC626F4382C00D98638 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EE3BC526F4382C00D98638 /* AppDelegate.swift */; };
 		19EE3BC826F4382C00D98638 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EE3BC726F4382C00D98638 /* SceneDelegate.swift */; };
-		19EE3BCA26F4382C00D98638 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EE3BC926F4382C00D98638 /* ViewController.swift */; };
 		19EE3BCD26F4382C00D98638 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19EE3BCB26F4382C00D98638 /* Main.storyboard */; };
 		19EE3BCF26F4383300D98638 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19EE3BCE26F4383300D98638 /* Assets.xcassets */; };
 		19EE3BD226F4383300D98638 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19EE3BD026F4383300D98638 /* LaunchScreen.storyboard */; };
+		19EE3BDD26F43F8500D98638 /* TagFilterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EE3BDC26F43F8500D98638 /* TagFilterController.swift */; };
+		19EE3BDF26F43FFA00D98638 /* TagCellProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EE3BDE26F43FFA00D98638 /* TagCellProperties.swift */; };
+		19EE3BE226F4449200D98638 /* TagCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EE3BE126F4449200D98638 /* TagCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		19EE3BC226F4382C00D98638 /* Invisi-Tag Lab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Invisi-Tag Lab.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19EE3BC526F4382C00D98638 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19EE3BC726F4382C00D98638 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		19EE3BC926F4382C00D98638 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		19EE3BCC26F4382C00D98638 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		19EE3BCE26F4383300D98638 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19EE3BD126F4383300D98638 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19EE3BD326F4383300D98638 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19EE3BDC26F43F8500D98638 /* TagFilterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagFilterController.swift; sourceTree = "<group>"; };
+		19EE3BDE26F43FFA00D98638 /* TagCellProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCellProperties.swift; sourceTree = "<group>"; };
+		19EE3BE126F4449200D98638 /* TagCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				19EE3BCB26F4382C00D98638 /* Main.storyboard */,
-				19EE3BC926F4382C00D98638 /* ViewController.swift */,
+				19EE3BDA26F43F3200D98638 /* Tag Filtering Prototype */,
 				19EE3BCE26F4383300D98638 /* Assets.xcassets */,
 				19EE3BD926F4397700D98638 /* Other Files */,
 			);
@@ -73,6 +77,16 @@
 				19EE3BD326F4383300D98638 /* Info.plist */,
 			);
 			path = "Other Files";
+			sourceTree = "<group>";
+		};
+		19EE3BDA26F43F3200D98638 /* Tag Filtering Prototype */ = {
+			isa = PBXGroup;
+			children = (
+				19EE3BDC26F43F8500D98638 /* TagFilterController.swift */,
+				19EE3BDE26F43FFA00D98638 /* TagCellProperties.swift */,
+				19EE3BE126F4449200D98638 /* TagCell.swift */,
+			);
+			path = "Tag Filtering Prototype";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,9 +159,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19EE3BCA26F4382C00D98638 /* ViewController.swift in Sources */,
+				19EE3BDD26F43F8500D98638 /* TagFilterController.swift in Sources */,
 				19EE3BC626F4382C00D98638 /* AppDelegate.swift in Sources */,
+				19EE3BE226F4449200D98638 /* TagCell.swift in Sources */,
 				19EE3BC826F4382C00D98638 /* SceneDelegate.swift in Sources */,
+				19EE3BDF26F43FFA00D98638 /* TagCellProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
